@@ -1,0 +1,183 @@
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+.navbar {
+    font-weight: 300;
+    .navbar-brand {
+        font-weight: 100;
+    }
+    .nav-item {
+        font-size: 1.4rem;
+    }
+    .nav-link {
+        color: #f5f5f5 !important;
+    }
+    .nav-link:hover {
+        transition: border 0.3s;
+        border-bottom: 1px solid white;
+    }
+}
+.navbar.scrolled {
+    background: #4A148C;
+    transition: background 500ms;
+}
+
+#showcase {
+    background: url("../images/showcase-mobile.jpg") bottom center / cover no-repeat;
+    min-height: 570px;
+    position: relative;
+    .play-video {
+        i {
+            color: white;
+        }
+        i:hover {
+            color: rgb(219, 152, 27);
+        }
+    }
+}
+
+#instaimg {
+    .instagram-img {
+        object-fit: cover;
+        height: 160px;
+        width: 160px;
+    }
+    img:hover {
+        opacity:0.8;
+        -moz-opacity:0.8;
+        -webkit-opacity:0.8;
+    }
+}
+
+#footer {
+    .btn {
+        border-radius: 100%;
+        height: 48px;
+        width: 48px;
+        padding: 9px;
+        align-items: center;
+        i {
+        color: rgb(226, 215, 230);
+        }
+    }
+}
+
+.video-link {
+	padding-top: 70px;
+}
+
+/***** Modal *****/
+
+.modal-movie {
+    .modal-content {
+        margin: 0 auto;
+        display: block;
+        background: none;
+        border: 0;
+        -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
+        -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+    }
+    .modal-body {
+        padding: 0 25px 25px 25px;
+    }
+    .modal-header {
+        padding: 25px 25px 15px 25px;
+        text-align: right; 
+    }
+    .modal-header {
+        border: 0;
+    }
+    .modal-header .close {
+        float: none;
+        font-size: 36px;
+        color: #fff;
+        font-weight: 300;
+        text-shadow: none;
+        opacity: 1;
+    }
+}
+
+.modal-form {
+    .modal-body {
+        background: rgb(247, 245, 245);
+        border-bottom: 1px solid #cccccc;
+         .btn {
+        border-radius: 31px;
+    }
+    input, textarea{
+        font-weight: 300;
+        background: #ffffff;
+        border: #4A148C 1px solid;
+        color: #2c2c2c;
+        border-radius: 31px;
+    }
+    input::-webkit-input-placeholder {
+        color: #984eaf;
+    }
+    textarea::-webkit-input-placeholder {
+        color: #984eaf;  
+    }
+    }
+    img {
+        height: 60px;
+        width: 60px;
+        border-radius: 100%;
+    }
+    .modal-social {
+        .card-contact {
+            .modal-title {
+            font-size: 16px !important;
+        }
+            border: 1px solid #d1d0d0;
+            border-radius: 5px;
+            background: #ffffff;
+            i {
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        background: #4A148C;
+        .nav-link:hover {
+            border-bottom: none;
+        }
+    }
+    #showcase {
+        h1 {
+            font-size: 4rem;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #showcase {
+        background: url("../images/showcase.jpg") bottom center / cover no-repeat;
+        min-height: 700px;
+    }
+    #instaimg {
+        .instagram-img {
+            height: 170px;
+            width: 170px;
+        }
+    }
+}
+@media (min-width: 992px) {
+    #instaimg {
+        .instagram-img {
+            height: 225px;
+            width: 225px;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    #instaimg {
+        .instagram-img {
+            height: 270px;
+            width: 270px;
+        }
+    }
+}
